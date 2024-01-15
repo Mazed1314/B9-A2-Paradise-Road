@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700&family=Mulish:wght@400;800&family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0px;
+  font-family: "Mulish", sans-serif;
+}
+
+/* commom style */
+
+.font-size-40 {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+}
+p,
+main > #populer-tour > .content > ul li {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.btn-common {
+  border-radius: 8px;
+  background: #ff5400;
+  padding: 12px 20px;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* header style */
+header {
+  padding: 10px 80px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  position: relative;
+}
+.nav > .nav-header {
+  display: inline;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  color: #424247;
+  padding: 10px;
+}
+.nav > .nav-header > .nav-title > .paradise {
+  color: #131318;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 13px;
+}
+.nav > .nav-header > .nav-title > .road {
+  color: #ff5400;
+  font-size: 36px;
+  font-weight: 800;
+  position: relative;
+  bottom: 13px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #424247;
+}
+.nav > .nav-links > a:hover {
+  color: #ff5400;
+}
+.nav > #nav-check {
+  display: none;
+}
+
+header > .banner {
+  background-image: url(Images/Group\ 13.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 30px 0;
+  border-radius: 16px;
+}
+header > .banner .linear-gradient {
+  background: linear-gradient(180deg, #070211 -70%, rgba(7, 2, 17, 0) 100%);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  padding: 50px 20px 120px;
+}
+header > .banner > .linear-gradient > p {
+  color: #fff;
+}
+header > .banner > .linear-gradient > h2 {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: -10px;
+}
+header > .banner .banner-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  border-radius: 8px;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.3);
+  margin-left: 220px;
+}
+header > .banner .banner-container > input,
+.select-box {
+  border: none;
+  padding: 12px 10px;
+  border-radius: 8px;
+  color: rgba(19, 19, 24, 0.5);
+  margin: 10px 0;
+}
+header > .banner .banner-container > .btn-common {
+  margin: 10px 0;
+}
+
+/* main style start */
+
+main #populer-tour {
+  display: flex;
+  padding: 10px 80px;
+}
+main #populer-tour > .content {
+  padding-right: 30px;
+}
+
+/* responsive style for mobile */
+
+@media (max-width: 600px) {
+  header {
+    padding: 30px 20px;
+  }
+  .nav > .nav-header > .nav-title > .paradise,
+  .nav > .nav-header > .nav-title > .road {
+    font-size: 29px;
+  }
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #1a1919;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #6a6666;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 60px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 50%;
+    color: #fff;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 400px);
+    overflow-y: auto;
+  }
+  header > .banner > .linear-gradient > h2 {
+    font-size: 30px;
+  }
+  header > .banner .banner-container > input {
+    width: 150px;
+  }
+  header > .banner .banner-container > .select-box,
+  button {
+    width: 170px;
+  }
+  header > .banner .banner-container {
+    display: inline;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+    position: relative;
+    left: 55px;
+    top: 50px;
+  }
+  main #populer-tour {
+    flex-direction: column;
+    padding: 20px;
+  }
+  main #populer-tour > .content > .title {
+    font-size: 20px;
+  }
+  main #populer-tour > .img-holder > img {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
