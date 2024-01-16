@@ -33,6 +33,7 @@ a {
 }
 
 /* header style */
+
 header {
   padding: 10px 80px;
 }
@@ -45,12 +46,12 @@ header {
 .nav > .nav-header {
   display: inline;
 }
-.nav > .nav-header > .nav-title {
+.nav > .nav-header > .nav-brand-name {
   display: inline-block;
   color: #424247;
   padding: 10px;
 }
-.nav > .nav-header > .nav-title > .paradise {
+.nav > .nav-header > .nav-brand-name > .paradise {
   color: #131318;
   font-size: 36px;
   font-weight: 800;
@@ -58,7 +59,7 @@ header {
   position: relative;
   bottom: 13px;
 }
-.nav > .nav-header > .nav-title > .road {
+.nav > .nav-header > .nav-brand-name > .road {
   color: #ff5400;
   font-size: 36px;
   font-weight: 800;
@@ -146,8 +147,13 @@ main #populer-tour {
 main #populer-tour > .content {
   padding-right: 30px;
 }
-main #destination {
+main #destination,
+#why-choose-us {
   padding: 10px 80px;
+  text-align: center;
+}
+main #destination > P {
+  padding: 0px 200px;
 }
 main #destination > .content > .content-1 {
   grid-area: content-1;
@@ -206,6 +212,97 @@ main #destination > .content {
     "content-3 content-3 content-3 content-4 content-4 content-4 content-4 content-4 content-5 content-5"
     "content-6 content-6 content-6 content-6 content-7 content-7 content-7 content-7 content-7 content-7";
 }
+main #why-choose-us {
+  justify-content: center;
+}
+main #why-choose-us > .content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+main #why-choose-us .card {
+  border-radius: 16px;
+  padding: 10px 20px 10px 10px;
+  text-align: start;
+}
+main #why-choose-us > .content > .card-1 {
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+main #why-choose-us > .content > .card-2 {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+main #why-choose-us > .content > .card-3 {
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+#news-letter {
+  padding: 50px 80px;
+  display: flex;
+  gap: 20px;
+}
+#news-letter > .form {
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  padding: 20px;
+}
+#news-letter > .form > input,
+button {
+  width: 90%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  margin-bottom: 20px;
+  border: none;
+}
+#news-letter > .form > button {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #ff5400;
+}
+#news-letter .img-container > img {
+  width: 100%;
+}
+
+/* footer style */
+
+footer {
+  margin: 0;
+  padding: 60px 300px;
+  text-align: center;
+  background: rgba(19, 19, 24, 0.1);
+}
+footer > .footer-brand-name > .paradise {
+  color: #131318;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 13px;
+}
+footer > .footer-brand-name > .road {
+  color: #ff5400;
+  font-size: 28px;
+  font-weight: 800;
+  position: relative;
+  bottom: 13px;
+}
+footer > .social-link {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+footer > .social-link i {
+  color: #131318;
+}
+footer > .copyright-text {
+  border-top: 1px solid #6a6666;
+  margin: 30px 0;
+  padding: 30px 0;
+}
 
 /* responsive style for mobile */
 
@@ -213,8 +310,8 @@ main #destination > .content {
   header {
     padding: 30px 20px;
   }
-  .nav > .nav-header > .nav-title > .paradise,
-  .nav > .nav-header > .nav-title > .road {
+  .nav > .nav-header > .nav-brand-name > .paradise,
+  .nav > .nav-header > .nav-brand-name > .road {
     font-size: 29px;
   }
   .nav > .nav-btn {
@@ -281,7 +378,8 @@ main #destination > .content {
     left: 55px;
     top: 50px;
   }
-  main #populer-tour {
+  main #populer-tour,
+  #news-letter {
     flex-direction: column;
     padding: 20px;
   }
@@ -292,8 +390,12 @@ main #destination > .content {
     width: 100%;
     margin-top: 30px;
   }
-  main #destination {
+  main #destination,
+  #why-choose-us {
     padding: 10px 20px;
+  }
+  main #destination > P {
+    padding: 0px 30px;
   }
   main #destination > .content {
     grid-area: none;
@@ -314,7 +416,13 @@ main #destination > .content {
   .content-6,
   .content-7 {
     width: 100%;
-    height: 150px;
+    height: 200px;
     background-size: cover;
+  }
+  main #why-choose-us > .content {
+    flex-direction: column;
+  }
+  footer {
+    padding: 10px 60px;
   }
 }
