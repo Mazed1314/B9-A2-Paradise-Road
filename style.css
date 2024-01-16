@@ -146,6 +146,66 @@ main #populer-tour {
 main #populer-tour > .content {
   padding-right: 30px;
 }
+main #destination {
+  padding: 10px 80px;
+}
+main #destination > .content > .content-1 {
+  grid-area: content-1;
+  background-image: url(Images/Rectangle\ 5.png);
+}
+main #destination > .content > .content-2 {
+  grid-area: content-2;
+  background-image: url(Images/Rectangle\ 8.png);
+}
+main #destination > .content > .content-3 {
+  grid-area: content-3;
+  background-image: url(Images/Rectangle\ 6.png);
+}
+main #destination > .content > .content-4 {
+  grid-area: content-4;
+  background-image: url(Images/Rectangle\ 7.png);
+}
+main #destination > .content > .content-5 {
+  grid-area: content-5;
+  background-image: url(Images/Rectangle\ 9.png);
+}
+main #destination > .content > .content-6 {
+  grid-area: content-6;
+  background-image: url(Images/Rectangle\ 11.png);
+}
+main #destination > .content > .content-7 {
+  grid-area: content-7;
+  background-image: url(Images/Rectangle\ 10.png);
+}
+main #destination > .content > .content-1,
+.content-2,
+.content-3,
+.content-4,
+.content-5,
+.content-6,
+.content-7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  border-radius: 16px;
+}
+
+main #destination > .content {
+  display: grid;
+  gap: 15px;
+  align-items: center;
+  grid-template-areas:
+    "content-1 content-1 content-1 content-1 content-1 content-2 content-2 content-2 content-2 content-2"
+    "content-3 content-3 content-3 content-4 content-4 content-4 content-4 content-4 content-5 content-5"
+    "content-6 content-6 content-6 content-6 content-7 content-7 content-7 content-7 content-7 content-7";
+}
 
 /* responsive style for mobile */
 
@@ -231,5 +291,30 @@ main #populer-tour > .content {
   main #populer-tour > .img-holder > img {
     width: 100%;
     margin-top: 30px;
+  }
+  main #destination {
+    padding: 10px 20px;
+  }
+  main #destination > .content {
+    grid-area: none;
+    grid-template-areas:
+      "content-1"
+      "content-2"
+      "content-3"
+      "content-4"
+      "content-5"
+      "content-6"
+      "content-7";
+  }
+  main #destination > .content > .content-1,
+  .content-2,
+  .content-3,
+  .content-4,
+  .content-5,
+  .content-6,
+  .content-7 {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
   }
 }
