@@ -125,6 +125,7 @@ header > .banner .banner-container {
   width: 60%;
   background: rgba(255, 255, 255, 0.3);
   margin-left: 220px;
+  padding: 0 15px;
 }
 header > .banner .banner-container > input,
 .select-box {
@@ -246,6 +247,8 @@ main #why-choose-us > .content > .card-3 {
   border-radius: 16px;
   border: 1px solid #ff5400;
   padding: 20px;
+  margin-bottom: 80px;
+  align-items: center;
 }
 #news-letter > .form > input,
 button {
@@ -263,10 +266,30 @@ button {
   border-radius: 8px;
   background: #ff5400;
 }
-#news-letter .img-container > img {
-  width: 100%;
+#news-letter .img-container > .travel-token {
+  background-color: #ff5400;
+  color: #fff;
+  text-align: center;
+  border-radius: 12px;
+  width: 40%;
+  padding: 10px;
+  transform: rotate(-32deg);
+  position: relative;
+  top: -150px;
+  left: 390px;
 }
-
+#news-letter .img-container > .travel-token > h5 {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+#news-letter .img-container > .travel-token > h2 {
+  font-size: 30px;
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
+}
 /* footer style */
 
 footer {
@@ -421,6 +444,19 @@ footer > .copyright-text {
   }
   main #why-choose-us > .content {
     flex-direction: column;
+  }
+  #news-letter .img-container > img {
+    width: 100%;
+  }
+  #news-letter .img-container > .travel-token > h5 {
+    font-size: 14px;
+  }
+  #news-letter .img-container > .travel-token > h2 {
+    font-size: 18px;
+  }
+  #news-letter .img-container > .travel-token {
+    top: -100px;
+    left: 200px;
   }
   footer {
     padding: 10px 60px;
