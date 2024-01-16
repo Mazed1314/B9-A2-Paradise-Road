@@ -13,7 +13,7 @@ body {
   font-weight: 800;
 }
 p,
-main > #populer-tour > .content > ul li {
+#populer-tour > .content > ul li {
   color: #5a5a5d;
   font-size: 16px;
   font-weight: 400;
@@ -119,7 +119,7 @@ header > .banner > .linear-gradient > h2 {
 }
 header > .banner .banner-container {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   justify-content: center;
   border-radius: 8px;
   width: 60%;
@@ -136,55 +136,61 @@ header > .banner .banner-container > input,
   margin: 10px 0;
 }
 header > .banner .banner-container > .btn-common {
-  margin: 10px 0;
+  margin: 10px 0 10px 10px;
 }
 
 /* main style start */
 
-main #populer-tour {
+/* populer-tour section */
+
+#populer-tour {
   display: flex;
   padding: 10px 80px;
 }
-main #populer-tour > .content {
+#populer-tour > .content {
   padding-right: 30px;
 }
-main #destination,
-#why-choose-us {
+
+/* destination section */
+
+#destination,
+#why-choose-us,
+#cliant-review {
   padding: 10px 80px;
   text-align: center;
 }
-main #destination > P {
+#destination > P {
   padding: 0px 200px;
 }
-main #destination > .content > .content-1 {
+#destination > .content > .content-1 {
   grid-area: content-1;
   background-image: url(Images/Rectangle\ 5.png);
 }
-main #destination > .content > .content-2 {
+#destination > .content > .content-2 {
   grid-area: content-2;
   background-image: url(Images/Rectangle\ 8.png);
 }
-main #destination > .content > .content-3 {
+#destination > .content > .content-3 {
   grid-area: content-3;
   background-image: url(Images/Rectangle\ 6.png);
 }
-main #destination > .content > .content-4 {
+#destination > .content > .content-4 {
   grid-area: content-4;
   background-image: url(Images/Rectangle\ 7.png);
 }
-main #destination > .content > .content-5 {
+#destination > .content > .content-5 {
   grid-area: content-5;
   background-image: url(Images/Rectangle\ 9.png);
 }
-main #destination > .content > .content-6 {
+#destination > .content > .content-6 {
   grid-area: content-6;
   background-image: url(Images/Rectangle\ 11.png);
 }
-main #destination > .content > .content-7 {
+#destination > .content > .content-7 {
   grid-area: content-7;
   background-image: url(Images/Rectangle\ 10.png);
 }
-main #destination > .content > .content-1,
+#destination > .content > .content-1,
 .content-2,
 .content-3,
 .content-4,
@@ -203,8 +209,7 @@ main #destination > .content > .content-1,
   height: 300px;
   border-radius: 16px;
 }
-
-main #destination > .content {
+#destination > .content {
   display: grid;
   gap: 15px;
   align-items: center;
@@ -213,31 +218,87 @@ main #destination > .content {
     "content-3 content-3 content-3 content-4 content-4 content-4 content-4 content-4 content-5 content-5"
     "content-6 content-6 content-6 content-6 content-7 content-7 content-7 content-7 content-7 content-7";
 }
-main #why-choose-us {
+
+/* why-choose-us section  */
+
+#why-choose-us {
   justify-content: center;
 }
-main #why-choose-us > .content {
+#why-choose-us > .content {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
-main #why-choose-us .card {
+#why-choose-us .card {
   border-radius: 16px;
-  padding: 10px 20px 10px 10px;
+  width: 100%;
+  padding: 10px;
   text-align: start;
 }
-main #why-choose-us > .content > .card-1 {
+#why-choose-us > .content > .card-1 {
   border: 1px solid rgba(251, 181, 99, 0.2);
   background: rgba(251, 181, 99, 0.05);
 }
-main #why-choose-us > .content > .card-2 {
+#why-choose-us > .content > .card-2 {
   border: 1px solid rgba(41, 206, 246, 0.2);
   background: rgba(41, 206, 246, 0.05);
 }
-main #why-choose-us > .content > .card-3 {
+#why-choose-us > .content > .card-3 {
   border: 1px solid rgba(233, 68, 68, 0.2);
   background: rgba(233, 68, 68, 0.05);
 }
+
+/* cliant-review section  */
+
+#cliant-review > .title {
+  padding: 20px 0;
+  margin: 20px 0;
+}
+#cliant-review > p {
+  padding: 0 220px;
+}
+#cliant-review > .cliant-review-content {
+  text-align: end;
+}
+#cliant-review > .cliant-review-content > button {
+  background-color: #fff;
+  border: 1px solid #ff5400;
+  padding: 10px 15px;
+  margin: 20px 0;
+}
+#cliant-review > .cliant-review-content > button > a {
+  color: #ff5400;
+}
+
+#cliant-review .card > h3 > span > img {
+  width: 20px;
+  margin: 0;
+  padding: 0;
+}
+#cliant-review > .cliant-review-content > .card-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  padding: 0 10px;
+}
+#cliant-review > .cliant-review-content > .card-container > .card {
+  text-align: start;
+  background: rgba(19, 19, 24, 0.05);
+  width: 100%;
+  padding: 10px;
+  border-radius: 16px;
+}
+#cliant-review > .cliant-review-content > .card-container > .card > img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#cliant-review > .cliant-review-content > .card-container > .card i {
+  color: #ff5400;
+}
+
+/* news-letter section  */
+
 #news-letter {
   padding: 50px 80px;
   display: flex;
@@ -250,8 +311,7 @@ main #why-choose-us > .content > .card-3 {
   margin-bottom: 80px;
   align-items: center;
 }
-#news-letter > .form > input,
-button {
+#news-letter > .form > input {
   width: 90%;
   padding: 10px 15px;
   border-radius: 8px;
@@ -290,10 +350,10 @@ button {
   padding: 0;
   margin: 0;
 }
+
 /* footer style */
 
 footer {
-  margin: 0;
   padding: 60px 300px;
   text-align: center;
   background: rgba(19, 19, 24, 0.1);
@@ -401,26 +461,26 @@ footer > .copyright-text {
     left: 55px;
     top: 50px;
   }
-  main #populer-tour,
+  #populer-tour,
   #news-letter {
     flex-direction: column;
     padding: 20px;
   }
-  main #populer-tour > .content > .title {
+  #populer-tour > .content > .title {
     font-size: 20px;
   }
-  main #populer-tour > .img-holder > img {
+  #populer-tour > .img-holder > img {
     width: 100%;
     margin-top: 30px;
   }
-  main #destination,
+  #destination,
   #why-choose-us {
     padding: 10px 20px;
   }
-  main #destination > P {
+  #destination > P {
     padding: 0px 30px;
   }
-  main #destination > .content {
+  #destination > .content {
     grid-area: none;
     grid-template-areas:
       "content-1"
@@ -431,7 +491,7 @@ footer > .copyright-text {
       "content-6"
       "content-7";
   }
-  main #destination > .content > .content-1,
+  #destination > .content > .content-1,
   .content-2,
   .content-3,
   .content-4,
@@ -442,7 +502,16 @@ footer > .copyright-text {
     height: 200px;
     background-size: cover;
   }
-  main #why-choose-us > .content {
+  #why-choose-us > .content {
+    flex-direction: column;
+  }
+  #cliant-review {
+    padding: 20px 5px;
+  }
+  #cliant-review > p {
+    padding: 0 12px;
+  }
+  #cliant-review .cliant-review-content > .card-container {
     flex-direction: column;
   }
   #news-letter .img-container > img {
