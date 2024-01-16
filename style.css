@@ -231,7 +231,7 @@ header > .banner .banner-container > .btn-common {
 }
 #why-choose-us .card {
   border-radius: 16px;
-  width: 100%;
+  width: 400px;
   padding: 10px;
   text-align: start;
 }
@@ -243,9 +243,14 @@ header > .banner .banner-container > .btn-common {
   border: 1px solid rgba(41, 206, 246, 0.2);
   background: rgba(41, 206, 246, 0.05);
 }
-#why-choose-us > .content > .card-3 {
+#why-choose-us .card-3 {
   border: 1px solid rgba(233, 68, 68, 0.2);
   background: rgba(233, 68, 68, 0.05);
+}
+#why-choose-us > .card-3-container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 /* cliant-review section  */
@@ -502,8 +507,12 @@ footer > .copyright-text {
     height: 200px;
     background-size: cover;
   }
-  #why-choose-us > .content {
+  #why-choose-us > .content,
+  .card-3-container {
     flex-direction: column;
+  }
+  #why-choose-us .card {
+    width: 320px;
   }
   #cliant-review {
     padding: 20px 5px;
@@ -511,11 +520,16 @@ footer > .copyright-text {
   #cliant-review > p {
     padding: 0 12px;
   }
+  #cliant-review .cliant-review-content {
+    padding: 0 10px 0 0;
+  }
   #cliant-review .cliant-review-content > .card-container {
     flex-direction: column;
+    width: 320px;
   }
   #news-letter .img-container > img {
     width: 100%;
+    justify-content: center;
   }
   #news-letter .img-container > .travel-token > h5 {
     font-size: 14px;
